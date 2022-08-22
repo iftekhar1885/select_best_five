@@ -29,96 +29,105 @@
     </header>
     <!-- -------------- -->
           <!-- top-player-session -->
-          <section class="container grid grid-cols-2 bg-black text-white ml-5 mx-auto">
-                <div class="grid grid-cols-3 gap-4 9/12 border rounded">
+          <section class="container grid grid-cols-2 bg-black text-white ml-5 mx-auto ">
+                <div class="grid grid-cols-3 gap-4  border rounded">
                     <!-- player -->
                     <div class="border rounded">
                         <img src="Neymar jr.webp">
-                        <h2 class="p-5 mt-3 font-bold">Neymar Jr</h2>
-                        <button class="bg-amber-600 px-8 py-2 m-3 hover:bg-sky-700 text-white font-medium rounded-lg"  onclick= "addTocart()">Select</button>
+                        <h2 id="neymar-jr" class="p-5 mt-3 font-bold">Neymar Jr</h2>
+                        <button id="btn1" class="bg-amber-600 px-8 py-2 m-3 hover:bg-sky-700 text-white font-medium rounded-lg">Select</button>
                     </div>
                     <!-- player-1 part end -->
                     <!-- player-2 part start -->
                     <div class="border rounded">
                         <img src="messi.webp">
-                        <h2 class="p-5 mt-3 font-bold">Leonel Messi</h2>
-                        <button id="btn-submit" class="bg-amber-600 px-8 py-2 m-3 hover:bg-sky-700 text-white font-medium rounded-lg" onclick="addTocart()">Select</button>
+                        <h2 id="Leonel-Messi" class="p-5 mt-3 font-bold">Leonel Messi</h2>
+                        <button id="btn2" class="bg-amber-600 px-8 py-2 m-3 hover:bg-sky-700 text-white font-medium rounded-lg">Select</button>
                     </div>
                     <!-- player-2 part end -->
                     <!-- player-3 part start -->
                     <div  class="border rounded">
                         <img src="C. Ronaldo.webp">
-                        <h2 class="p-5 mt-3 font-bold">C. Ronaldo</h2>
-                        <button id="btn-submit" class="bg-amber-600 px-8 py-2 m-3 hover:bg-sky-700 text-white font-medium rounded-lg " onclick="addTocart()">Select</button>
+                        <h2 id="c-ronaldo" class="p-5 mt-3 font-bold">C. Ronaldo</h2>
+                        <button id="btn3" class="bg-amber-600 px-8 py-2 m-3 hover:bg-sky-700 text-white font-medium rounded-lg ">Select</button>
                     </div>
                     <!-- player-3 part end -->
                     <!-- player-4 part start -->
                     <div class="border rounded">
                         <img src="Kylian Mbappe.webp">
-                        <h2 class="p-5 mt-3 font-bold">Kylian Mbappe</h2>
-                        <button id="btn-submit" class="bg-amber-600 px-8 py-2 m-3 hover:bg-sky-700 text-white font-medium rounded-lg " onclick="addTocart()">Select</button>
+                        <h2 id="M-bappy" class="p-5 mt-3 font-bold">Kylian Mbappe</h2>
+                        <button id="btn4" class="bg-amber-600 px-8 py-2 m-3 hover:bg-sky-700 text-white font-medium rounded-lg ">Select</button>
                     </div>
                     <!-- player-4 part end -->
                     <!-- player-5 part start -->
                     <div class="border rounded">
                         <img src="robert lowandoski.webp">
-                        <h2 class="p-5 mt-3 font-bold">Robert lowandoski</h2>
-                        <button id="btn-submit" class="bg-amber-600 px-8 py-2 m-3 hover:bg-sky-700 text-white font-medium rounded-lg " onclick="addTocart()">Select</button>
+                        <h2 id="robert-lowan" class="p-5 mt-3 font-bold">Robert lowandoski</h2>
+                        <button id="btn5" class="bg-amber-600 px-8 py-2 m-3 hover:bg-sky-700 text-white font-medium rounded-lg ">Select</button>
                     </div>
                     <!-- player-5 part end -->
                     <!-- player-6 part start -->
                     <div class="border rounded">
                         <img src="Harry Kane.webp">
-                        <h2 class="p-5 mt-3 font-bold">Harry Kane</h2>
-                        <button id="btn-submit" class="bg-amber-600 px-8 py-2 m-3 hover:bg-sky-700 text-white font-medium rounded-lg " onclick="addTocart()">Select</button>
+                        <h2 id="harry-kane" class="p-5 mt-3 font-bold">Harry Kane</h2>
+                        <button id="btn6" class="bg-amber-600 px-8 py-2 m-3 hover:bg-sky-700 text-white font-medium rounded-lg ">Select</button>
                     </div>
                     <!-- player-6 part end -->
                 </div>
             </div>
-            <div>
-                <h2 class="text-3xl mb-5 p-3 text-center">Selected-V</h2>
-                <!-- table -->
-                <div>
-                    <table class="table w-full">
-                      <!-- head -->
-                      <thead>
-                        <tr>
-                        
-                          
-                        </tr>
-                      </thead>
-                      <tbody>
+            <div class="w-9/12">
+                <h2 class="text-3xl mt-5 p-3 text-center">Selected - <span>0</span></h2>
 
-                    
-                    </tbody>
+               <div class="text-2xl mt-3 ml-5 p-3 list-decimal">
+                <uL id="order-list" class="text-2xl mt-3 p-3 list-decimal">
+                    <ol></ol>
+                </uL>
+               </div>
+
+
+
+             <div>
+                <h3 class="text-3xl mt-10 p-3 text-center">Budget</h3>
+                <div class="flex ml-30 text-center">
+                    <h3 class="p-3 ml-5">Per Player</h3>
+                    <input class="w-6/12 mt-2 px-3 py-3 ml-2 bg-black border" type="text" name="" id="" placeholder="1000">
+                </div>
+                <div class="bg-amber-600 w-9/12 p-5 mt-5 text-center mx-5 ml-5 hover:bg-sky-700 text-white font-medium rounded-lg">
+                <button id="btn-submit">Calculate</button>
+                </div>
+                <div class="flex ml-30 text-center">
+                    <h3 class="p-5 ml-5">Player Expenses</h3>
+                    <h3 class="p-5 ml-5">$5000</h3>
+                </div>
+                <div class="flex ml-30 text-center">
+                    <h3 class="p-5 ml-5">Manager</h3>
+                    <input class="w-6/12 mt-2 px-3 py-3 ml-2 bg-black border" type="text" name="" id="" placeholder="2000">
+                </div>
+                <div class="flex ml-30 text-center">
+                    <h3 class="p-5 ml-5">Coach</h3>
+                    <input class="w-6/12 mt-3 px-3 py-3 ml-5 bg-black border" type="text" name="" id="" placeholder="4000">
+                </div>
+                <div class="bg-amber-600 w-9/12 p-5 mt-5 text-center mx-5 ml-5 hover:bg-sky-700 text-white font-medium rounded-lg">
+                    <button id="btn-submit">Calculate Total</button>
+                    </div>
+                    <div class="flex ml-30 text-center">
+                        <h3 class="p-5 ml-5">Total</h3>
+                        <h3 class="p-5 ml-5 text-end">$11000</h3>
+                    </div>
+
+            </div>
+                
               </div>
             </div>
-
-         <!-- <div class="mb-3 p-5 mt-3 font-bold">
-            <h1 class="text-3xl mb-5 p-3 text-center">Selected - V</h2>
-            <div class="mb-3 text-center font-semibold">
-                <p>1. Neymar Jr</p>
-                <p>2. Leonel Messi</p>
-                <p>3. C. Ronaldo</p>
-                <p>4. Kylian Mbappe</p>
-                <p>5. Robert lowandoski</p>
-                <p>6. Harry Kane</p>    
-            </div> -->
-           
-         </div>
-                
-                
-        </section>
-          
-        <!-- <section>
-            <footer class="footer items-center p-4 bg-neutral text-neutral-content">
-                <div class="items-center grid-flow-col">
-                  <p class="text-center">Copyright © 2022 - All right reserved</p>
-                </div> 
-                
-              </footer>
-        </section> -->
-    </main>
+      </section>  
+    </main> 
+        <footer class="footer items-center p-4 bg-neutral text-neutral-content mt-8">
+            <hr>
+            <div class="items-center grid-flow-col">
+              <p class="text-center">Copyright @ 2022 All Rights Reserved.</p>
+            </div>
+            
+          </footer>
  </body>
  <script src="player.js"></script>
  </html>

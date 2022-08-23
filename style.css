@@ -128,6 +128,12 @@ input[type=text] {
     color: tomato;
 }
 
-
+.foter-part{
+    background-color: #000000;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 10px;
+    padding: 40px;
+}
 
 

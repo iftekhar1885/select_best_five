@@ -1,108 +1,82 @@
-// select button of Neymar jr
-document.getElementById('btn1').addEventListener('click', function() {
-    const orderLists = document.getElementById('order-list').childElementCount;
-    if (orderLists === 5) {
-        alert('you can select maximum 5 player')
-        return;
-    } else {
-        const neymarElement = document.getElementById('neymar-jr');
-        const neymarName = neymarElement.innerText;
-        const orderList = document.getElementById('order-list');
+// function getall(elementId, btnId) {
+//     const orderLists = document.getElementById('order-list').childElementCount;
+//     if (orderLists === 5) {
+//         alert('you can select maximum 5 player')
+//         return;
+//     } else {
+//         const element = document.getElementById(elementId);
+//         const elementText = element.innerText;
 
-        const li = document.createElement('li');
-        const liText = document.createTextNode(neymarName)
-        li.appendChild(liText);
-        orderList.appendChild(li);
-        document.getElementById('btn1').disabled = true;
-    }
-})
-// select button of leonel Messi
-document.getElementById('btn2').addEventListener('click', function() {
-    const orderLists = document.getElementById('order-list').childElementCount;
-    if (orderLists === 5) {
-        alert('you can select maximum 5 player')
-        return;
-    } else {
-        const messiElement = document.getElementById('Leonel-Messi');
-        const messiName = messiElement.innerText;
-        const orderList = document.getElementById('order-list');
+//         const orderList = document.getElementById('order-list');
 
-        const li = document.createElement('li');
-        const liText = document.createTextNode(messiName)
-        li.appendChild(liText);
-        orderList.appendChild(li);
-        document.getElementById('btn2').disabled = true;
-    }
-})
-// select button of C. Ronaldo
-document.getElementById('btn3').addEventListener('click', function() {
-    const orderLists = document.getElementById('order-list').childElementCount;
-    if (orderLists === 5) {
-        alert('you can select maximum 5 player')
-        return;
-    } else {
-        const ronaldoElement = document.getElementById('c-ronaldo');
-        const ronaldoName = ronaldoElement.innerText;
-        const orderList = document.getElementById('order-list');
+//         const li = document.createElement('li');
+//         const liText = document.createTextNode(elementText)
+//         li.appendChild(liText);
+//         orderList.appendChild(li);
+//         document.getElementById(btnId).disabled = true;
+//     }
+// }
+// document.getElementById('btn1').addEventListener('click', function() {
+//     getall('Cristiano', 'btn1');
+// })
+// document.getElementById('btn2').addEventListener('click', function() {
+//     getall('Kevin', 'btn2');
+// })
+// document.getElementById('btn3').addEventListener('click', function() {
+//     getall('Lionel', 'btn3');
+// })
+// document.getElementById('btn4').addEventListener('click', function() {
+//     getall('Kylian', 'btn4');
+// })
+// document.getElementById('btn5').addEventListener('click', function() {
+//     getall('Mohamed', 'btn5');
+// })
+// document.getElementById('btn6').addEventListener('click', function() {
+//     getall('robert', 'btn6');
+// })
 
-        const li = document.createElement('li');
-        const liText = document.createTextNode(ronaldoName)
-        li.appendChild(liText);
-        orderList.appendChild(li);
-        document.getElementById('btn3').disabled = true;
-    }
-})
-// select button of K. Mbappy
-document.getElementById('btn4').addEventListener('click', function() {
-    const orderLists = document.getElementById('order-list').childElementCount;
-    if (orderLists === 5) {
-        alert('you can select maximum 5 player')
-        return;
-    } else {
-        const mbappyElement = document.getElementById('M-bappy');
-        const mbappyName = mbappyElement.innerText;
-        const orderList = document.getElementById('order-list');
+// document.getElementById('player-calculate').addEventListener('click', function() {
+//     const playerPerCost = document.getElementById('player-cost-field');
+//     const playersCostValue = parseFloat(playerPerCost.value);
+//     if (isNaN(playersCostValue) || playersCostValue < 0) {
+//         alert('Please provide a valid number')
+//         return;
+//     }
+//     const orderList = document.getElementById('order-list').childElementCount;
+//     const totalExpense = playersCostValue * orderList;
+//     const totalPlayerCostelement = document.getElementById('player-total-expense');
+//     totalPlayerCostelement.innerText = totalExpense;
+// })
 
-        const li = document.createElement('li');
-        const liText = document.createTextNode(mbappyName)
-        li.appendChild(liText);
-        orderList.appendChild(li);
-        document.getElementById('btn4').disabled = true;
-    }
-})
-// select button of Robert Lowandoski
-document.getElementById('btn5').addEventListener('click', function() {
-    const orderLists = document.getElementById('order-list').childElementCount;
-    if (orderLists === 5) {
-        alert('you can select maximum 5 player')
-        return;
-    } else {
-        const lowandoskiElement = document.getElementById('robert-lowan');
-        const lowandoskiName = lowandoskiElement.innerText;
-        const orderList = document.getElementById('order-list');
+// document.getElementById('total-cost-calculate').addEventListener('click', function() {
+//     const playerPerCost = document.getElementById('player-cost-field');
+//     const playersCostValue = parseFloat(playerPerCost.value);
+//     if (isNaN(playersCostValue) || playersCostValue < 0) {
+//         alert('Please give all input with a valid number')
+//         return;
+//     }
+//     const orderList = document.getElementById('order-list').childElementCount;
+//     const totalExpense = playersCostValue * orderList;
+//     const totalPlayerCostelement = document.getElementById('player-total-expense');
+//     totalPlayerCostelement.innerText = totalExpense;
 
-        const li = document.createElement('li');
-        const liText = document.createTextNode(lowandoskiName)
-        li.appendChild(liText);
-        orderList.appendChild(li);
-        document.getElementById('btn5').disabled = true;
-    }
-})
-// select button of Robert Lowandoski
-document.getElementById('btn6').addEventListener('click', function() {
-    const orderLists = document.getElementById('order-list').childElementCount;
-    if (orderLists === 5) {
-        alert('you can select maximum 5 player')
-        return;
-    } else {
-        const harykaneElement = document.getElementById('harry-kane');
-        const harykaneName = harykaneElement.innerText;
-        const orderList = document.getElementById('order-list');
+//     const playerExpense = parseFloat(totalPlayerCostelement.innerText);
+//     const finalTotalCost = document.getElementById('final-Total');
 
-        const li = document.createElement('li');
-        const liText = document.createTextNode(harykaneName)
-        li.appendChild(liText);
-        orderList.appendChild(li);
-        document.getElementById('btn6').disabled = true;
-    }
-})
+//     const managerCost = document.getElementById('manager-cost');
+//     const managerCostValue = parseFloat(managerCost.value);
+
+//     if (isNaN(managerCostValue) || managerCostValue < 0) {
+//         alert('Please provide a valid amout by number')
+//         return;
+//     }
+//     const coachCost = document.getElementById('coach-cost');
+//     const coachCostValue = parseFloat(coachCost.value);
+
+//     if (isNaN(coachCostValue) || coachCostValue < 0) {
+//         alert('Please provide a valid amout by number')
+//         return;
+//     }
+//     const finalExpenses = playerExpense + managerCostValue + coachCostValue;
+//     finalTotalCost.innerText = finalExpenses;
+// })
